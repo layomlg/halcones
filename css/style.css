@@ -1,0 +1,12 @@
+:root {
+  --blue: #007bff;
+  --bgLogo:#BCE0FD;
+  --bgPrincipal:#2699FB;
+  --bgSecundario:#7FC4FD;
+  --bgCard:
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--bgPrincipal);
+}
