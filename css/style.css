@@ -1,9 +1,55 @@
 :root {
-  --blue: #007bff;
+  /* Header */
   --bgLogo:#BCE0FD;
   --bgPrincipal:#2699FB;
   --bgSecundario:#7FC4FD;
-  --bgCard:
+  --bgBadge:#E8F3FF;
+  --colorBadge:#2699FB;
+  --colorHeader:#FFFFFF;
+
+
+  /* Footer */
+  --bgFooter:#2699FB;
+  --colorFooter:#FFFFFF;
+
+  /* Login */
+  --bgLogin:#233D5B;
+  --bgLoginForm1:#D13F99;
+  --bgLoginForm2:#F5F5F8;
+  --bgLoginButton:#64E0BF;
+
+  /* Inputs */
+  --bgInput:#E2EDF2;
+  --colorInput:#869095;
+  /**Roboto Bold 20***/
+
+  /* Inputs */
+  --colorLink:#03A7FD;
+
+  /* Hero */
+  --bgHero:#C3D3E5;
+  --bgHeroCat:#B2C4D8;
+  --bgHeroCatActive:#AABDD3;
+  --colorHeroCat:#AABDD3;
+
+  /* Section */
+  --colorSectionTitle:#000000;
+  --bgSection:#DDEAF2;
+
+  /* Artículos */
+  --bgCard:#C3D3E5;
+  --colorCard:#FFFFFF;
+  --bgCardButton:#C3D3E5;
+  --colorCardButton:#FFFFFF;
+
+
+
+
+
+
+
+
+
 }
 
 body{
