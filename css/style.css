@@ -1,4 +1,6 @@
 :root {
+  --bgBody:#FFFFFF;
+
   /* Header */
   --bgLogo:#BCE0FD;
   --bgPrincipal:#2699FB;
@@ -29,8 +31,9 @@
   /* Hero */
   --bgHero:#C3D3E5;
   --bgHeroCat:#B2C4D8;
-  --bgHeroCatActive:#AABDD3;
-  --colorHeroCat:#AABDD3;
+  --bgHeroCat2:#AABDD3;
+  --bgHeroCatHover:#1D3857;
+  --colorHeroCat:#FFFFFF;
 
   /* Section */
   --colorSectionTitle:#000000;
@@ -41,18 +44,178 @@
   --colorCard:#FFFFFF;
   --bgCardButton:#C3D3E5;
   --colorCardButton:#FFFFFF;
-
-
-
-
-
-
-
-
-
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
 }
 
 body{
   min-height: 100vh;
-  background-color: var(--bgPrincipal);
+  background-color: var(--bgBody);
+  position: relative;
+}
+
+.contenedor{
+  min-height: calc(100vh);
+  padding-top: calc(83px + 0px);
+  padding-bottom: 54px;
+}
+
+/*** Titulos de seccion ***/
+.page-title{
+  background-color: var(--bgSection);
+  margin: 0px;
+  padding: 30px;
+  text-align: center;
+}
+.page-title p{
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--colorSectionTitle);
+  margin-bottom: 15px;
+}
+
+/*** Hero ***/
+.hero{
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+}
+.hero>.carousel{
+  width: 70%;
+  flex: 1 70%;
+}
+.hero>.categorias{
+  width: 30%;
+  flex: 1 30%;
+}
+.categorias .cat{
+  height: 33.3%;
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--bgHeroCat);
+  color: var(--colorHeroCat);
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 20px;
+  position: relative;
+  cursor: pointer;
+}
+.categorias .cat:nth-child(2){
+  background-color: var(--bgHeroCat2);
+}
+.categorias .cat:hover{
+  background-color: var(--bgHeroCatHover);
+}
+.categorias .cat p{
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+
+/*Elemento*/
+.elemento{
+  margin: 0px auto;
+  padding: 40px;
+}
+.elemento.destacado{
+  padding: 40px;
+  background-color: var(--bgSection);
+}
+.elemento p.titulo{
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--colorSectionTitle);
+}
+
+/*Artículo miniatura*/
+
+
+/* Artículos */
+ll{
+  --bgCard:#C3D3E5;
+  --colorCard:#FFFFFF;
+  --bgCardButton:#C3D3E5;
+  --colorCardButton:#FFFFFF;
+}
+
+
+.art{
+  width: 100%;
+  padding: 15px;
+  background-color: var(--bgCard);
+  color: var(--colorCard);
+}
+.miniatura .art{
+  width: 100%;
+  padding: 0px;
+}
+.art img{
+  width: 100%;
+}
+.art .art-info{
+  margin-top: 15px;
+}
+.art p{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.art .art-titulo{
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--colorCard);
+}
+.art .art-mlg{
+  font-size: 13px;
+  font-weight: normal;
+  color: var(--colorCard);
+}
+.art .art-pts{
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--colorCard);
+}
+
+.art-actions{
+
+}
+.art-actions .btn-add{
+  padding: 6px 15px;
+  color: var(--colorCard);
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+}
+.art-actions .btn-fav{
+  width: 31px;
+  height: 31px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  padding: 3px;
+  position: relative;
+  top: 0px;
+}
+.art-actions .btn-fav > span{
+  background-image: url('../img/svg/heart.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  min-height: 25px;
+  position: relative;
+  top: 0px;
 }

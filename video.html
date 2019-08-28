@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <video
+             id="video-active"
+             class="video-active"
+             width="640"
+             height="390"
+             controls="controls">
+        <source src="./trash/ANC%20OCCIDENTE_RA%20-%20converted%20with%20Clipchamp.mp4" type="video/mp4">
+      </video>
+      <div id="current">0:00</div>
+      <div id="duration">0:00</div>
+
+
+
+
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var vid = document.getElementById("video-active"); 
+        var flag = 0;
+        $("#video-active").on(
+          "timeupdate", 
+          function(event){
+            onTrackedVideoFrame(this.currentTime, this.duration);
+            if(this.currentTime>=5 && flag==0){
+              flag=1;
+              alert("pase por el 5");
+            }
+            
+            if(this.currentTime>=10 && flag==1){
+               flag=2;
+               vid.pause();
+            alert("pase por el 10 y no respondiste");
+          }
+
+          });
+      });
+
+      function onTrackedVideoFrame(currentTime, duration){
+        $("#current").text(currentTime); //Change #current to currentTime
+        $("#duration").text(duration)
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
