@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
-
-    <title>Hello, world!</title>
+    
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon"/>
+    <title>Halcones || <?php echo substr(basename($_SERVER['PHP_SELF']),0,-4); ?></title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top header">

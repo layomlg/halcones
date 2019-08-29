@@ -255,6 +255,9 @@ li.nav-item.img span{
   bottom: 0px;
   left: 0px;
 }
+.footer.login {
+  background-color: var(--bgLoginFooter);
+}
 
 .footer p{
   width: 100%;
@@ -263,4 +266,8 @@ li.nav-item.img span{
   color: var(--colorFooter);
   margin-bottom: 0px;
   padding: 0px 15px;
+}
+.footer.login p{
+  color: var(--colorLoginFooter);
+  text-align: right;
 }

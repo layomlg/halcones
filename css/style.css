@@ -12,13 +12,18 @@
 
   /* Footer */
   --bgFooter:#2699FB;
-  --colorFooter:#FFFFFF;
+  --colorFooter:#FFFFFF; 
+  --bgLoginFooter:#FFFFFF;
+  --colorLoginFooter:#869095;
 
   /* Login */
   --bgLogin:#233D5B;
   --bgLoginForm1:#D13F99;
   --bgLoginForm2:#F5F5F8;
+  --bgLoginInput:#E2EDF2;
+  --colorLoginInput:#869095;
   --bgLoginButton:#64E0BF;
+  --colorLoginButton:#FFFFFF;
 
   /* Inputs */
   --bgInput:#E2EDF2;
@@ -126,6 +131,11 @@ body{
   padding: 40px;
   background-color: var(--bgSection);
 }
+.elemento > .wrap{
+  max-width: 1200px;
+  display: block;
+  margin: 0px auto;
+}
 .elemento p.titulo{
   margin-bottom: 15px;
   font-size: 24px;
@@ -150,6 +160,15 @@ ll{
   padding: 15px;
   background-color: var(--bgCard);
   color: var(--colorCard);
+  margin-bottom: 30px;
+}
+.art > a{
+  height: auto;
+  text-decoration: none;
+}
+.art > a:hover{
+  height: auto;
+  text-decoration: none;
 }
 .miniatura .art{
   width: 100%;
@@ -165,12 +184,44 @@ ll{
   text-align: center;
   margin-bottom: 10px;
 }
-
 .art .art-titulo{
   font-size: 15px;
   font-weight: normal;
   color: var(--colorCard);
+  text-overflow: ellipsis;
+  display: block;
 }
+.art .art-titulo {
+  --lh: 22.5px;
+  --max-lines: 3;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  max-height: 67.5px;
+  overflow: hidden;
+}
+.art .art-titulo::before {
+  position: absolute;
+  content: "...";
+
+  right: 0;
+
+  bottom: 0;
+  right: 0;
+}
+.art .art-titulo::after {
+  content: "";
+  position: absolute;
+  /*
+  inset-inline-end: 0;
+  */
+  right: 0;
+  /* missing bottom on purpose*/
+  width: 1rem;
+  height: 1rem;
+  background: var(--bgCard);;
+}
+
+
 .art .art-mlg{
   font-size: 13px;
   font-weight: normal;
@@ -183,7 +234,8 @@ ll{
 }
 
 .art-actions{
-
+  width: auto;
+  text-align: center;
 }
 .art-actions .btn-add{
   padding: 6px 15px;
@@ -196,13 +248,15 @@ ll{
   display: inline-block;
   position: relative;
   top: 0px;
+
+  margin-bottom: 10px;
 }
 .art-actions .btn-fav{
   width: 31px;
   height: 31px;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
-  padding: 3px;
+  padding: 5px;
   position: relative;
   top: 0px;
 }
@@ -217,5 +271,102 @@ ll{
   height: 25px;
   min-height: 25px;
   position: relative;
+  top: 6px;
+}
+.art.added .art-actions .btn-fav > span{
+  background-image: url('../img/svg/heart-full.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.login-wrap{
+  position: absolute;
+
+
+}
+/***Login***/
+.bg-login{
+  position: absolute;
   top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 55%;
+  background-color: var(--bgLogin);
+}
+.login-wrap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  width: 90%;
+  max-width: 400px;
+}
+.login-wrap .datos{
+  padding: 30px;
+}
+.logo{
+  background-color: var(--bgLoginForm1);
+  padding: 40px;
+}
+.logo img{
+  width: 80%;
+  max-width: 300px;
+  margin: 0px auto;
+  display: block;
+}
+
+.datos{
+  background-color: var(--bgLoginForm2);
+}
+.datos input{
+  width: 100%;
+  background-color: var(--bgLoginInput);
+  border: 0px none;
+  color: var(--colorLoginInput);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 15px;
+  display: block;
+  margin: 0px auto 30px;
+}
+.datos input[type=button]{
+  width: auto;
+  max-width: 100%;
+  background-color: var(--bgLoginButton);
+  border: 0px none;
+  color: var(--colorLoginButton);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 30px;
+  display: block;
+  margin: 0px auto 30px;
+}
+.datos a{
+  width: auto;
+  max-width: 100%;
+  text-align: center;
+  border: 0px none;
+  color: var(--colorLink)!important;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 30px;
+  display: block;
+  margin: 0px auto;
+}
+
+
+.datos input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(--colorLoginInput)!important;
+}
+.datos input::-moz-placeholder { /* Firefox 19+ */
+  color: var(--colorLoginInput)!important;
+}
+.datos input:-ms-input-placeholder { /* IE 10+ */
+  color: var(--colorLoginInput)!important;
+}
+.datos input:-moz-placeholder { /* Firefox 18- */
+  color: var(--colorLoginInput)!important;
 }

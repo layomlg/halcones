@@ -42,84 +42,170 @@
   </div>
 </div>
 <div class="elemento destacado">
-  <p class="titulo">Carrito de compra</p>
-  <div class="miniatura row">
-    <div class="col-6 col-sm-2">
-      <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
-    </div>
-    <div class="col-6 col-sm-2">
-      <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
-    </div>
-    <div class="col-6 col-sm-2">
-      <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
-    </div>
-    <div class="col-6 col-sm-2">
-      <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
-    </div>
-    <div class="col-6 col-sm-2">
-      <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
-    </div>
-    <div class="col-6 col-sm-2">
-      <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
+  <div class="wrap">
+    <p class="titulo">Carrito de compra</p>
+    <div class="miniatura row">
+      <div class="col-6 col-sm-2">
+        <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
+      </div>
+      <div class="col-6 col-sm-2">
+        <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
+      </div>
+      <div class="col-6 col-sm-2">
+        <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
+      </div>
+      <div class="col-6 col-sm-2">
+        <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
+      </div>
+      <div class="col-6 col-sm-2">
+        <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
+      </div>
+      <div class="col-6 col-sm-2">
+        <div class="art"><a href="./detalle.php"><img src="./img/art.png" alt="Artículo"></a></div>
+      </div>
     </div>
   </div>
 </div>
 <div class="elemento">
-  <p class="titulo">Productos destacados para ti</p>
-  <div class="row">
-    <div class="col-6 col-sm-3">
-      <div class="art">
-        <a href="./detalle.php">
-          <img src="./img/art.png" alt="Artículo">
-          <div class="art-info">
-            <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
-            <p class="art-mlg">Cod. MLG18162</p>
-            <p class="art-pts">1,154 PUNTOS</p>
+  <div class="wrap">
+    <p class="titulo">Productos destacados para ti</p>
+    <div class="row">
+      <div class="col-6 col-sm-3">
+        <div class="art">
+          <a href="./detalle.php">
+            <img src="./img/art.png" alt="Artículo">
+            <div class="art-info">
+              <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
+              <p class="art-mlg">Cod. MLG18162</p>
+              <p class="art-pts">1,154 PUNTOS</p>
+            </div>
+          </a>
+          <div class="art-actions">
+            <a class="btn-add">Agregar al carrito</a>
+            <a class="btn-fav"><span class="added"></span></a>
           </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-6 col-sm-3">
-      <div class="art">
-        <a href="./detalle.php">
-          <img src="./img/art.png" alt="Artículo">
-          <div class="art-info">
-            <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
-            <p class="art-mlg">Cod. MLG18162</p>
-            <p class="art-pts">1,154 PUNTOS</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-6 col-sm-3">
-      <div class="art">
-        <a href="./detalle.php">
-          <img src="./img/art.png" alt="Artículo">
-          <div class="art-info">
-            <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
-            <p class="art-mlg">Cod. MLG18162</p>
-            <p class="art-pts">1,154 PUNTOS</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-6 col-sm-3">
-      <div class="art">
-        <a href="./detalle.php">
-          <img src="./img/art.png" alt="Artículo">
-          <div class="art-info">
-            <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
-            <p class="art-mlg">Cod. MLG18162</p>
-            <p class="art-pts">1,154 PUNTOS</p>
-          </div>
-        </a>
-        <div class="art-actions">
-          <a class="btn-add">Agregar al carrito</a>
-          <a class="btn-fav"><span class="added"></span></a>
         </div>
       </div>
-    </div>
+      <div class="col-6 col-sm-3">
+        <div class="art">
+          <a href="./detalle.php">
+            <img src="./img/art.png" alt="Artículo">
+            <div class="art-info">
+              <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
+              <p class="art-mlg">Cod. MLG18162</p>
+              <p class="art-pts">1,154 PUNTOS</p>
+            </div>
+          </a>
+          <div class="art-actions">
+            <a class="btn-add">Agregar al carrito</a>
+            <a class="btn-fav"><span class="added"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3">
+        <div class="art">
+          <a href="./detalle.php">
+            <img src="./img/art.png" alt="Artículo">
+            <div class="art-info">
+              <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
+              <p class="art-mlg">Cod. MLG18162</p>
+              <p class="art-pts">1,154 PUNTOS</p>
+            </div>
+          </a>
+          <div class="art-actions">
+            <a class="btn-add">Agregar al carrito</a>
+            <a class="btn-fav"><span class="added"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3">
+        <div class="art">
+          <a href="./detalle.php">
+            <img src="./img/art.png" alt="Artículo">
+            <div class="art-info">
+              <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
+              <p class="art-mlg">Cod. MLG18162</p>
+              <p class="art-pts">1,154 PUNTOS</p>
+            </div>
+          </a>
+          <div class="art-actions">
+            <a class="btn-add">Agregar al carrito</a>
+            <a class="btn-fav"><span class="added"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3">
+        <div class="art">
+          <a href="./detalle.php">
+            <img src="./img/art.png" alt="Artículo">
+            <div class="art-info">
+              <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
+              <p class="art-mlg">Cod. MLG18162</p>
+              <p class="art-pts">1,154 PUNTOS</p>
+            </div>
+          </a>
+          <div class="art-actions">
+            <a class="btn-add">Agregar al carrito</a>
+            <a class="btn-fav"><span class="added"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3">
+        <div class="art">
+          <a href="./detalle.php">
+            <img src="./img/art.png" alt="Artículo">
+            <div class="art-info">
+              <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
+              <p class="art-mlg">Cod. MLG18162</p>
+              <p class="art-pts">1,154 PUNTOS</p>
+            </div>
+          </a>
+          <div class="art-actions">
+            <a class="btn-add">Agregar al carrito</a>
+            <a class="btn-fav"><span class="added"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3">
+        <div class="art">
+          <a href="./detalle.php">
+            <img src="./img/art.png" alt="Artículo">
+            <div class="art-info">
+              <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
+              <p class="art-mlg">Cod. MLG18162</p>
+              <p class="art-pts">1,154 PUNTOS</p>
+            </div>
+          </a>
+          <div class="art-actions">
+            <a class="btn-add">Agregar al carrito</a>
+            <a class="btn-fav"><span class="added"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3">
+        <div class="art">
+          <a href="./detalle.php">
+            <img src="./img/art.png" alt="Artículo">
+            <div class="art-info">
+              <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
+              <p class="art-mlg">Cod. MLG18162</p>
+              <p class="art-pts">1,154 PUNTOS</p>
+            </div>
+          </a>
+          <div class="art-actions">
+            <a class="btn-add">Agregar al carrito</a>
+            <a class="btn-fav"><span class="added"></span></a>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </div>
+</div>
+<div class="elemento destacado">
+  <div class="wrap">
+  
+  
   </div>
 </div>
 
