@@ -202,12 +202,43 @@
     </div>
   </div>
 </div>
-<div class="elemento destacado">
+<div class="elemento art">
   <div class="wrap">
-  
-  
+    <div class="art">
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="./detalle.php">
+            <img src="./img/art.png" alt="Artículo">
+          </a>
+        </div>
+        <div class="col-sm-6 my-auto">
+          <div class="art-info">
+            <p class="art-titulo">LÁMPARA PROYECTOR DE ESTRELLAS GIRATORIA. REDLEMON®</p>
+            <p class="art-mlg">Cod. MLG18162</p>
+            <p class="art-descripcion">Descripción producto bla bla bla bla bla bla bla, descripción producto bla bla bla bla bla bla bla, descripción producto bla bla bla bla bla bla bla.</p>
+
+            <p class="art-pts">1,154 PUNTOS</p>
+          </div>
+          <div class="art-actions">
+            <a class="btn-add">Agregar al carrito</a>
+            <a class="btn-fav"><span class="added"></span></a>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+    </div>
   </div>
-</div>
 
 
 
@@ -216,7 +247,7 @@
 
 
 
-<?php include('footer.php') ?>
+  <?php include('footer.php') ?>
 
 
 

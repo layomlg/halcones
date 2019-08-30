@@ -162,6 +162,9 @@ ll{
   color: var(--colorCard);
   margin-bottom: 30px;
 }
+.elemento.art .art{
+  margin-bottom: 0px;
+}
 .art > a{
   height: auto;
   text-decoration: none;
@@ -176,6 +179,11 @@ ll{
 }
 .art img{
   width: 100%;
+  display: block;
+  margin: 0px auto;
+}
+.art.doble img{
+  width: 56%;
 }
 .art .art-info{
   margin-top: 15px;
@@ -184,12 +192,33 @@ ll{
   text-align: center;
   margin-bottom: 10px;
 }
+.elemento.art p{
+  text-align: left;
+  margin-bottom: 10px;
+}
 .art .art-titulo{
   font-size: 15px;
   font-weight: normal;
+  font-weight: bold;
   color: var(--colorCard);
   text-overflow: ellipsis;
   display: block;
+}
+.elemento.art .art .art-titulo{
+  font-size: 20px;
+  font-weight: bold;
+}
+.art .art-descripcion{
+  font-size: 15px;
+  font-weight: normal;
+  font-weight: bold;
+  color: var(--colorCard);
+  text-overflow: ellipsis;
+  display: block;
+}
+.elemento.art .art .art-descripcion{
+  font-size: 16px;
+  font-weight: normal;
 }
 .art .art-titulo {
   --lh: 22.5px;
@@ -199,43 +228,51 @@ ll{
   max-height: 67.5px;
   overflow: hidden;
 }
+/*
 .art .art-titulo::before {
-  position: absolute;
-  content: "...";
+position: absolute;
+content: "...";
 
-  right: 0;
+right: 0;
 
-  bottom: 0;
-  right: 0;
+bottom: 0;
+right: 0;
 }
 .art .art-titulo::after {
-  content: "";
-  position: absolute;
-  /*
-  inset-inline-end: 0;
-  */
-  right: 0;
-  /* missing bottom on purpose*/
-  width: 1rem;
-  height: 1rem;
-  background: var(--bgCard);;
-}
+content: "";
+position: absolute;
 
+
+right: 0;
+
+width: 1rem;
+height: 1rem;
+background: var(--bgCard);;
+}*/
 
 .art .art-mlg{
   font-size: 13px;
   font-weight: normal;
   color: var(--colorCard);
 }
+.elemento.art .art .art-mlg{
+  font-size: 16px;
+}
 .art .art-pts{
   font-size: 15px;
   font-weight: bold;
   color: var(--colorCard);
 }
-
+.elemento.art .art .art-pts{
+  font-size: 20px;
+}
 .art-actions{
   width: auto;
   text-align: center;
+}
+.elemento.art .art-actions{
+  width: auto;
+  text-align: left;
 }
 .art-actions .btn-add{
   padding: 6px 15px;
@@ -370,3 +407,75 @@ ll{
 .datos input:-moz-placeholder { /* Firefox 18- */
   color: var(--colorLoginInput)!important;
 }
+
+
+/*Inputs*/
+
+select{
+  width: 100%;
+  background-color: var(--bgLoginInput);
+  border: 0px none;
+  color: var(--colorLoginInput);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 15px;
+  display: block;
+  margin: 0px auto 30px;
+}
+
+/*Catálogo*/
+.filtro {
+  display: block;
+  text-align: right;
+}
+.filtro > img{
+  display: inline-block;
+  width: 35px;
+  margin-right: 20px;
+
+}
+.filtro > select{
+  display: inline-block;
+  max-width: 180px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
