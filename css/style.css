@@ -1,5 +1,6 @@
 :root {
   --bgBody:#FFFFFF;
+  --colorBody:#2699FB;
 
   /* Header */
   --bgLogo:#BCE0FD;
@@ -43,12 +44,30 @@
   /* Section */
   --colorSectionTitle:#000000;
   --bgSection:#DDEAF2;
+  --bgSection2:#C3D3E5;
+
+  /* Categorias */
+  --colorCategorias:#000000;
+  --bgCategorias:#DDEAF2;
+  --bgCategorias2:#C3D3E5;
+  --bgCategorias3:#AABDD3;
 
   /* Artículos */
   --bgCard:#C3D3E5;
   --colorCard:#FFFFFF;
   --bgCardButton:#C3D3E5;
   --colorCardButton:#FFFFFF;
+
+  /* Detalle */
+  --bgDetalle:#DDEAF2;
+  --colorDetalle:#000000;
+  --bgDetalleButton:#DDEAF2;
+  --colorDetalleButton:#FFFFFF;
+
+  /* Detalle */
+  --bgColor1:#C3D3E5;
+  --bgColor2:#DDEAF2;
+  --colorSec:#000000;
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 *{
@@ -73,6 +92,10 @@ body{
   margin: 0px;
   padding: 30px;
   text-align: center;
+  margin-bottom: 30px;
+}
+.page-title{
+  background-color: var(--bgSection2);
 }
 .page-title p{
   font-size: 24px;
@@ -86,10 +109,16 @@ body{
   position: relative;
   display: flex;
   margin-bottom: 30px;
+  min-height: 400px;
+  background-color: var(--bgCard);
 }
 .hero>.carousel{
   width: 70%;
   flex: 1 70%;
+}
+.hero>.carousel .art p,
+.hero>.carousel .art .art-actions{
+  text-align: left;
 }
 .hero>.categorias{
   width: 30%;
@@ -147,14 +176,6 @@ body{
 
 
 /* Artículos */
-ll{
-  --bgCard:#C3D3E5;
-  --colorCard:#FFFFFF;
-  --bgCardButton:#C3D3E5;
-  --colorCardButton:#FFFFFF;
-}
-
-
 .art{
   width: 100%;
   padding: 15px;
@@ -228,28 +249,6 @@ ll{
   max-height: 67.5px;
   overflow: hidden;
 }
-/*
-.art .art-titulo::before {
-position: absolute;
-content: "...";
-
-right: 0;
-
-bottom: 0;
-right: 0;
-}
-.art .art-titulo::after {
-content: "";
-position: absolute;
-
-
-right: 0;
-
-width: 1rem;
-height: 1rem;
-background: var(--bgCard);;
-}*/
-
 .art .art-mlg{
   font-size: 13px;
   font-weight: normal;
@@ -320,8 +319,6 @@ background: var(--bgCard);;
 
 .login-wrap{
   position: absolute;
-
-
 }
 /***Login***/
 .bg-login{
@@ -424,6 +421,9 @@ select{
 }
 
 /*Catálogo*/
+.elemento.ordenar{
+  padding-bottom: 0px;
+}
 .filtro {
   display: block;
   text-align: right;
@@ -438,9 +438,220 @@ select{
   display: inline-block;
   max-width: 180px;
   width: 100%;
+  margin-bottom: 0px;
+}
+
+/* Detalle de producto*/
+
+.detalle{
+  width: 100%;
+  padding: 15px;
+  background-color: var(--bgDetalle);
+  color: var(--colorDetalle);
+  margin-bottom: 30px;
+}
+.detalle .art{
+  width: 100%;
+  padding: 15px;
+  background-color: var(--bgDetalle);
+  color: var(--colorDetalle);
+  margin-bottom: 0px;
+}
+.detalle .art p{
+  text-align: left;
+}
+.detalle .art .art-titulo{
+  font-size: 28px;
+  color: var(--colorDetalle);
+  max-height: none;
+}
+
+.detalle .art .art-descripcion{
+  color: var(--colorDetalle);
+  margin-bottom: 30px;
+}
+.detalle .art .art-mlg{
+  font-size: 28px;
+  color: var(--colorDetalle);
+}
+.detalle .art .art-pts{
+  font-size: 28px;
+  color: var(--colorDetalle);
+}
+.detalle .art-actions .btn-add{
+  color: var(--colorDetalleButton);
+}
+.detalle .art-actions{
+  text-align: left;
+}
+.atributo{
+  font-size: 16px;
+  font-weight: bold;
+}
+.atributo ul{
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
+.atributo ul li{
+  height: 25px;
+  min-width: 25px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  margin: 0px;
+  padding: 5px 2px;
+  cursor: pointer;
+  color: var(--colorBody);
+  font-size: 10px;
+}
+.atributo ul li.active,
+.atributo ul li:hover{
+  border: 1px solid #ff8c6a;
+
+}
+.colores ul li.c-0{
+  background: #C84EDE;  
+}
+.colores ul li.c-1{
+  background: #B52323;  
+}
+.colores ul li.c-2{
+  background: #52BC8B;  
+}
+.colores ul li.c-3{
+  background: #3F8DD0;  
+}
+.colores ul li.c-4{
+  background: #FFF72F;  
+}
+
+.art-disclaimer{
+  margin-top: 60px;
+  font-size: 12px; 
+}
+/*Categorias*/
+.categorias{
+  background-color: var(--bgCategorias);
+  color: var(--colorCategorias);
+  padding: 30px 0px;
+}
+.categorias p{
+  padding: 0px 30px;
+}
+.categorias ul{
+  list-style: none;
+  padding: 0px;
+}
+.categorias ul li{
+  padding:5px 30px;
+  cursor: pointer; 
+}
+.categorias ul li span{
+  width: calc(100% + 60px);
+  margin: -30px;
+  padding: 30px;
+  display: block;
+}
+.categorias ul li:hover{
+  background-color: var(--bgCategorias2);
+}
+.categorias ul li li:hover{
+  background-color: var(--bgCategorias3);
+}
+.categorias > ul > li{
+  background-image: url('../img/svg/caret-down.svg');
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) 13px;
+}
+.categorias > ul > li.expand{
+  background-image: url('../img/svg/caret-up.svg');
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) 13px;
+}
+.categorias > ul > li> ul{
+  display: none;
+  margin: 0px -30px;
+}
+.categorias > ul > li> ul > li{
+  padding: 5px 30px 5px 45px;
 }
 
 
+/*Mecánica*/
+
+.elemento .sec1>.col-sm-6:nth-child(1),
+.elemento .sec2>.col-sm-6:nth-child(2){
+  background-color: var(--bgColor1);
+}
+.elemento .sec1>.col-sm-6:nth-child(2),
+.elemento .sec2>.col-sm-6:nth-child(1){
+  background-color: var(--bgColor2);
+}
+.sec-titulo{
+  font-size: 18px;
+  font-weight: bold;
+  color:  var(--colorSec);
+}
+.sec-texto{
+  font-size: 16px;
+  color:  var(--colorSec);
+}
+.page-title .sec-texto{
+  font-size: 16px;
+  font-weight: normal;
+  color:  var(--colorSec);
+}
+.sec-texto a{
+  font-size: 16px;
+  cursor: pointer;
+  color:  var(--colorSec);
+}
+.center .sec-titulo{
+  text-align: center!important;
+}
+.center .sec-texto{
+  text-align: center!important;
+}
+
+
+/*FAQS*/
+
+.faq ul{
+  list-style: none;
+  padding: 0px;
+}
+.faq ul li{
+  padding:5px 30px;
+  cursor: pointer; 
+}
+.faq ul li span{
+  width: calc(100% + 60px);
+  margin: -30px;
+  padding: 30px;
+  display: block;
+}
+.faq ul li:hover{
+  background-color: var(--bgCategorias2);
+}
+.faq ul li li:hover{
+  background-color: var(--bgCategorias3);
+}
+.faq > ul > li{
+  background-image: url('../img/svg/caret-down.svg');
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) 13px;
+}
+.faq > ul > li.expand{
+  background-image: url('../img/svg/caret-up.svg');
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) 13px;
+}
 
 
 

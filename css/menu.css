@@ -123,7 +123,7 @@ li.nav-item.img span{
 }
 
 
-@media (max-width: 1030px){
+@media (max-width: 1060px){
   li.nav-item a.nav-link {
     margin-left: 10px!important;
     margin-right: 10px!important;
@@ -134,7 +134,7 @@ li.nav-item.img span{
     padding-left: 15px;
   }
 }
-@media (max-width: 992px){
+@media (max-width: 1000px){
   li.nav-item a.nav-link {
     margin-left: 5px!important;
     margin-right: 5px!important;
@@ -156,7 +156,7 @@ li.nav-item.img span{
 
 
 
-@media (max-width: 920px){
+@media (max-width: 941px){
   .primera p.usuario {
     flex: 1 100%;
     text-align: center;
