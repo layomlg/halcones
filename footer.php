@@ -26,6 +26,18 @@
     $(this).parent().children("ul").toggle();
     $(this).parent().toggleClass("expand");
   });
+  $(".faq > ul > li>span").click(function(){
+    if($(this).parent().hasClass("expand")){
+      $(this).siblings("p").toggle();
+      $(this).parent().toggleClass("expand");
+    }
+    else{
+      $(".faq > ul > li > span").parent().children("p").css("display","none");
+      $(this).siblings("p").toggle();
+      $(this).parent().toggleClass("expand");
+    }
+
+  });
 </script>
 </body>
 </html>
